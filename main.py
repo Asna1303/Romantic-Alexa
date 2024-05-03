@@ -10,6 +10,8 @@ try:
                 command = listener.recognize_google(voice)
                 command=command.lower()
                 if 'alexa' in command:
+                        engine.say(command)
+                        engine.runAndWait()
                         print(command)
 except:
         pass
