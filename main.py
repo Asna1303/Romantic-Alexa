@@ -16,7 +16,9 @@ def take_command():
                         command = listener.recognize_google(voice)
                         command = command.lower()
                         if 'alexa' in command:
-                                talk(command)
+                                print(command)
         except:
                 pass
         return command
+def run_alexa():
+        command = take_command()
